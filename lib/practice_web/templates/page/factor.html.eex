@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Prime Factors</h2>
+
+    <p>x = <%= @x %></p>
+    <p>Prime Factors are: </p>
+    <ul>
+	<%= for item <- @y do %>
+        	<li><%= item %></li>
+        <% end %>
+    </ul>
+  </div>
+</div>
